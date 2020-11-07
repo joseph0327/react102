@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API for FE exam",
+  "main": "src/index.js",
+  "dependencies": {
+    "apollo-datasource": "^0.5.0",
+    "apollo-datasource-rest": "^0.9.5",
+    "apollo-server": "^2.6.7",
+    "graphql": "^14.4.1",
+    "nodemon": "^1.19.1",
+    "react-scroll": "^1.8.1",
+    "sequelize": "^5.9.0",
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "scripts": {
+    "server": "cd src && nodemon index.js",
+    "test": "jest",
+    "start": "nodemon src/index.js",
+    "react-start": "cd ../client && npm start",
+    "dev": "concurrently \"npm start\" \"npm run react-start\""
+  },
+  "author": "Sigmund Burgos",
+  "license": "ISC"
+}
